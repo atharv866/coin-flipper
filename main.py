@@ -1,19 +1,18 @@
-input.onButtonPressed(Button.A, function () {
-    if (Math.randomBoolean()) {
-        basic.showLeds(`
+def on_button_pressed_a():
+    if Math.random_boolean():
+        basic.show_leds("""
             . . # . .
             . # # # .
             # # # # #
             . # # # .
             . . # . .
-            `)
-    } else {
-        basic.showLeds(`
+            """)
+    else:
+        basic.show_leds("""
             . . # . .
             . # # . .
             . . # . .
             . . # . .
             # # # # #
-            `)
-    }
-})
+            """)
+input.on_button_pressed(Button.A, on_button_pressed_a)
